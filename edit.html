@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Edit Note Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Notes App</h1>
+            <h2 class="header__subtitle">Take notes and never forget</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="./index.html">Home</a>
+            <span id="note-edited"></span>
+        </div>
+    </div>
+    <div class="container">
+        <input class="title-input" type="text" name="note-title" id="note-title" placeholder="Note Title">
+        <textarea class="body-input" name="note-body" id="note-body" cols="30" rows="10" placeholder="Enter note body here"></textarea>
+        <button class="button button--secondary" id="remove-note">Remove Note</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="./scripts/notes-functions.js"></script>
+    <script src="./scripts/notes-edit.js"></script>
+</body>
+
+</html>
